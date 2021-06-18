@@ -8,21 +8,25 @@ namespace myio
 	instream inp;
 	oustream oup;
 	char chtmp[1100000];
+	inline
 	instream operator >> (instream in,int &x)
 	{
 		scanf("%d",&x);
 		return in;
 	}
+	inline
 	instream operator >> (instream in,long long &x)
 	{
 		scanf("%lld",&x);
 		return in;
 	}
+	inline
 	instream operator >> (instream in,char &x)
 	{
 		scanf(" %c",&x);
 		return in;
 	}
+	inline
 	instream operator >> (instream in,string &s)
 	{
 		s="";
@@ -35,21 +39,25 @@ namespace myio
 		}
 		return in;
 	}
+	inline
 	oustream operator << (oustream ou,int x)
 	{
 		printf("%d",x);
 		return ou;
 	}
+	inline
 	oustream operator << (oustream ou,long long x)
 	{
 		printf("%lld",x);
 		return ou;
 	}
+	inline
 	oustream operator << (oustream ou,char x)
 	{
 		printf("%c",x);
 		return ou;
 	}
+	inline
 	oustream operator << (oustream ou,string s)
 	{
 		for(int i=0;i<s.size();i++)
