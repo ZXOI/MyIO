@@ -1,5 +1,5 @@
 # MyIO
-## Your stupid school OJ make your cin/cout TLE? THis is for you!
+## Your stupid school OJ make your `cin`/`cout` TLE? This is for you!
 ## Description
 Just simply replacing `cin`/`cout` with `scanf`/`printf`.  
 Supports types: `int`,`long long`,`char`,`string`.  
