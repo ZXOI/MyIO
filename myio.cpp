@@ -1,5 +1,4 @@
-namespace myio
-{
+namespace myio{
 	struct instream{};
 	struct oustream{};
 	struct control{string type;int val;};
