@@ -17,7 +17,7 @@ namespace myio{
 	inline instream operator >> (instream in,string &s){s="";scanf("%s",chtmp);string t="#";for(int i=0;chtmp[i]!='\0';i++){t[0]=chtmp[i];s+=t[0];}return in;}
 
 	inline control setprecision(int x){return (control){"setprecision",x};}
-	inline oustream operator << (oustream ou, control c){if(c.type=="setprecision"){precision=c.val;}}
+	inline oustream operator << (oustream ou, control c){if(c.type=="setprecision"){precision=c.val;}return ou;}
 	inline void getformat(){sprintf(chtmp,"%%.%dlf",precision);}
 	inline oustream operator << (oustream ou,int x){if(precision==123321123){printf("%d",x);return ou;}getformat();printf(chtmp,x);return ou;}
 	inline oustream operator << (oustream ou,long long x){if(precision==123321123){printf("%lld",x);return ou;}getformat();printf(chtmp,x);return ou;}
